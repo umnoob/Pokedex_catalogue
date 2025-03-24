@@ -79,7 +79,7 @@ main{
     border-radius: 5px;
     outline: none;
     font-weight: 600;
-    color: #009717;
+    color: grey;
     font-size: clamp(0.8rem, 2vw, 1rem); /* Ajuste responsivo do tamanho da fonte */
     box-shadow: -3px 4px 0 #032E29, -4px 5px 0 #000;
     background-color: #68cf78;
