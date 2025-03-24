@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags e links para estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Image/favicon-16x16.png"> 
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer src="./JS/script.js" defer></script>
+    <title>Pokedex catalogue</title>
+</head>
+<body>
+    <main>
+        <!-- Imagem do Pokémon -->
+        <img src="#" alt="pokemon" class="pokemon_img">
+        <img src="#" alt="shiny" class="shiny_img">
+        
+        <!-- Dados do Pokémon -->
+        <h1 class="pokemon_data">
+            <span class="pokemon_number"></span>
+            <span class="pokemon_name"></span>
+        </h1>
+
+        <h2 class="poke_info">
+            <span class="pokemon_gen"></span>
+            <span class="pokemon_weight"></span>
+            <span class="pokemon_height"></span>
+            <span class="pokemon_type1"></span>
+            <span class="pokemon_type2"></span>
+        </h2>
+                   
+        <!-- Formulário de busca -->
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Name or Number" required>
+        </form>
+        
+        <!-- Botões de navegação -->
+        <div class="buttons">
+            <button class="button btn-prev">&lt; Prev</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+        <div class="button_random">
+            <button class="btn-random"><img src="./Image/random.png" alt="random" class="random_img"></button>
+        </div>
+        
+        <!-- Imagem da Pokedex -->
+        <img src="./Image/Pokedex2.png" alt="pokedex" class="pokedex">
+    </main>   
+</body>
+</html>

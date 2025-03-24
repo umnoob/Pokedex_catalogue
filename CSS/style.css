@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset de margens e preenchimentos, e definição da fonte padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+/* Estilo do corpo da página */
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #D4C60B,#0BA2D4);
+    min-height: 100vh;
+}
+
+/* Estilo do elemento principal */
+main{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+
+/* Estilo da imagem da Pokedex */
+.pokedex{
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Estilo da imagem do Pokémon */
+.pokemon_img{
+    position: absolute;
+    bottom: 50%;
+    left: 28%;
+    transform: translate(-63%, 20%);
+    height: 20%;
+}
+
+/* Estilo da imagem shiny do Pokémon */
+.shiny_img{
+    position: absolute;
+    bottom: 14%;
+    left: 15%;
+    transform: translate(-63%, 20%);
+    height: 15%;
+}
+
+/* Estilo dos dados do Pokémon */
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 38%;
+    left: 60%;
+    font-size: clamp(1rem, 2vw, 2.5rem); /* Ajuste responsivo do tamanho da fonte */
+}
+
+/* Estilo do nome do Pokémon */
+.pokemon_name{
+    color: #11F1D7;
+    text-transform: capitalize;
+    font-size: clamp(0.8rem, 2vw, 2rem); /* Ajuste responsivo do tamanho da fonte */
+}
+
+/* Estilo do formulário de busca */
+.form{
+    position: absolute;
+    width: 50%;
+    top: 72%;
+    left: 8%;
+}
+
+/* Estilo do campo de busca */
+.input_search{
+    width: 51%;
+    padding: 4%;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    color: #009717;
+    font-size: clamp(0.8rem, 2vw, 1rem); /* Ajuste responsivo do tamanho da fonte */
+    box-shadow: -3px 4px 0 #032E29, -4px 5px 0 #000;
+    background-color: #68cf78;
+}
+
+/* Estilo dos botões de navegação */
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 78%;
+    width: 36%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilo dos botões */
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: clamp(0.8rem, 2vw, 2rem); /* Ajuste responsivo do tamanho da fonte */
+    font-weight: 600;
+    color: #11F1D7;
+    background-color: #CF1130;
+    box-shadow: -1px 3px 0 #3E050E, -2px 4px 0 #000;
+}
+
+/* Estilo dos botões quando clicados */
+.button:active{
+    background-color: #820A1E;
+    font-size: clamp(0.7rem, 1.8vw, 1.8rem); /* Ajuste responsivo do tamanho da fonte */
+}
+
+/* Estilo da geração do Pokémon */
+.pokemon_gen{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 70%;
+    left: 59%;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    text-transform: capitalize;
+}
+
+/* Estilo do peso do Pokémon */
+.pokemon_weight{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 53%;
+    left: 60%;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+
+/* Estilo da altura do Pokémon */
+.pokemon_height{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 53%;
+    left: 77%;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+
+/* Estilo do primeiro tipo do Pokémon */
+.pokemon_type1{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 62%;
+    left: 60%;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+
+/* Estilo do segundo tipo do Pokémon */
+.pokemon_type2{
+    position: absolute;
+    font-weight: 600;
+    color: #11F1D7;
+    top: 62%;
+    left: 77%;
+    font-size: clamp(0.8rem, 2vw, 2rem);
+}
+
+/* Estilo do botão random */
+.button_random{
+    position: absolute;
+    top: 13%;
+    left: 45%;
+    width: 15%;
+    transform: translate(-57%, 0);
+    display: flex;
+}
+
+.btn-random{
+    width: 50%;
+    height: 50%;
+    padding: 0%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: clamp(0.8rem, 2vw, 2rem); /* Ajuste responsivo do tamanho da fonte */
+    font-weight: 600;
+    color: #009717;
+    background-color: #56AB63;
+    box-shadow: -1px 3px 0 #032E29, -2px 4px 0 #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* Estilo do botão random quando clicado */
+.btn-random:active{
+    background-color: #2c7436;
+    font-size: clamp(0.7rem, 1.8vw, 1.8rem); /* Ajuste responsivo do tamanho da fonte */
+}
+
+/* Estilo da imagem dentro do botão random */
+.random_img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
