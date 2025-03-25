@@ -93,7 +93,7 @@ const renderPokemon = async (pokemon) => {
         pokemonImage.style.height = '20%';
     }
     // Exibe mensagem de "Not found" se o ID do Pokémon for maior que 898
-    if (data.id > 896) {
+    if (data.id > 898) {
         pokemonImage.style.display = '';
         pokemonName.innerHTML = 'Not found';
         pokemonNumber.innerHTML = '';
@@ -128,8 +128,8 @@ form.addEventListener('submit', (event) => {
 buttonPrev.addEventListener('click', () => {
     searchPokemon -= 1; // Decrementa o ID do Pokémon
     if (searchPokemon < 1) {
-        searchPokemon = 896; // Se o ID for menor que 1, volta para o último Pokémon
-        pokemonImage.style.display = '896';
+        searchPokemon = 898; // Se o ID for menor que 1, volta para o último Pokémon
+        pokemonImage.style.display = '898';
         renderPokemon(searchPokemon);
     }
     renderPokemon(searchPokemon); // Renderiza o Pokémon anterior
@@ -138,7 +138,7 @@ buttonPrev.addEventListener('click', () => {
 // Adiciona um evento de clique ao botão "Next"
 buttonNext.addEventListener('click', () => {
     searchPokemon += 1; // Incrementa o ID do Pokémon
-    if (searchPokemon > 896) {
+    if (searchPokemon > 898) {
         searchPokemon = 1; // Se o ID for maior que 898, volta para o primeiro Pokémon
         renderPokemon(searchPokemon);
     }
